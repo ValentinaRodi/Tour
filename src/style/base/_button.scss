@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 354px;
+  height: 64px;
+  background: $color-primary;
+  border: none;
+  transition: all 0.5s;
+
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.2rem, $weight: 400);
+  color: $color-text-btn;
+
+  @include media-mobile {
+    width: 100%;
+  }
+
+  &:hover {
+    width: 375px;
+    background: $color-btn-hover;
+  }
+}
+
+

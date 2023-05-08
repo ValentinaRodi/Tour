@@ -1,0 +1,23 @@
+@mixin font ($size: 1.6rem, $height: 2.2rem, $weight: 400) {
+    font-size: $size;
+    font-style: normal;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin columns (  $flex-direction, $wrap: nowrap, $justify-content: space-evenly, $align-items: center, $gap: 0px) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin media-laptop {
+    @media (max-width: $laptop-width) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) { @content; }
+}

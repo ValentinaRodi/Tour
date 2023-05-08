@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: $color-background;
+}
+
+p {
+  @extend %font-prim;
+  @include font($size: 1.8rem, $height: 2.4rem, $weight: 400);
+  color: $color-text;
+
+  @include media-mobile {
+    @include font($height: 1.4rem, $size: 2.2rem, $weight: 500);
+  }
+}
+
+h1 {
+  @extend %font-prim;
+  @include font($size: 4rem, $height: 4.6rem, $weight: 500);
+  color: $color-title;
+
+  @include media-mobile {
+    @include font($height: 2.43rem, $size: 2.8rem, $weight: 500);
+  }
+}
+
+h2 {
+  @extend %font-prim;
+  @include font($size: 3.2rem, $height: 3.8rem, $weight: 500);
+  color: $color-title;
+
+  @include media-mobile {
+    @include font($height: 2rem, $size: 2.8rem, $weight: 500);
+  }
+}

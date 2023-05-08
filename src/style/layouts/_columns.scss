@@ -1,0 +1,11 @@
+.layout-2-column {
+  @include columns($flex-direction: column);
+}
+
+.layout-2-row-baseline {
+  @include columns($flex-direction: row, $align-items: baseline, $gap: 24px);
+}
+
+.layout-2-row {
+  @include columns($flex-direction: row);
+}

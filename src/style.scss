@@ -1,0 +1,18 @@
+// abstract
+@import "style/abstract/constants";
+@import "style/abstract/mixins";
+@import "style/abstract/placeholders";
+
+//base
+@import "style/base/base";
+@import "style/base/button";
+
+//layouts
+@import "style/layouts/wrapper";
+@import "style/layouts/columns";
+
+//components
+@import "style/components/header";
+@import "style/components/slider";
+@import "style/components/info";
+@import "style/components/tours";

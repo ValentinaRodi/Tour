@@ -1,0 +1,13 @@
+.wrapper {
+    max-width: $content-width;
+    margin: auto;
+    margin-bottom: 64px;
+
+    @include media-laptop {
+        margin: 0px 8.9%;
+    }
+    
+    @include media-mobile {
+        margin: 0px 5%;
+    }
+}
